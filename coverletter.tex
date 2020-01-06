@@ -1,0 +1,140 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{522583}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+\definecolor{darktext}{HTML}{522583}
+% \definecolor{text}{HTML}{522583}
+% \definecolor{graytext}{HTML}{522583}
+\definecolor{lighttext}{HTML}{522583}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{false}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Salim}{Mansour}
+\position{Software Engineering{\enskip\cdotp\enskip}Game Programming}
+%\address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+
+\mobile{(+1) 647-708-5763}
+\email{salimansour@gmail.com}
+\homepage{slimnsour.me}
+%\github{slimnsour}
+\linkedin{slimnsour}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+%\quote{``Be the change that you want to see in the world."}
+
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Company Recruitment Team}
+  {Google Inc.\\1600 Amphitheatre Parkway\\Mountain View, CA 94043}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Software Engineer}
+% How the letter is opened
+\letteropening{Dear Hiring Team Manager,}
+% How the letter is closed
+\letterclosing{Thank you,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+%\makecvfooter
+%  {\today}
+%  {Claud D. Park~~~·~~~Cover Letter}
+%  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+%\lettersection{About Me}
+I am interested in applying for the Programmer position at Drowning a Mermaid Productions. As someone with a passion for games and is willing to fully devote their programming skills to the medium, I respect your value in combining your strong game design principles and unique innovation to create refreshing experiences for players to cherish. My experience in software development and my demonstrated versatility for quickly picking up new technologies makes me an excellent candidate for the position.
+
+%\lettersection{Why Google?}
+I am currently in my final year of studying for a Specialist in Software Engineering at the University of Toronto, expected to graduate in April 2020. During my degree, I have excelled at a variety of solo and group projects, with a recent example being applying linear algebra concepts to build a 3D ray tracer in C for a Computer Graphics course. This came with results of above 100\% for the ray tracer assessments for implementing robust bonus features like multithreading, depth of field, and refraction. During my time working at CAMH, I adapted to a new environment and built preprocessing pipelines at the forefront of neuroscience research. Despite having a limited background in neuroscience, I quickly acquired the necessary knowledge and combined it with my programming expertise to design and implement pipelines, greatly bringing down the time for tasks like tractography generation. As you can see, my programming skills and adaptability will prove to be great technical assets to Drowning a Mermaid Productions.
+
+%\lettersection{Why Me?}
+As someone who is an active leader of a club and excelled at math and computer science competitions, you will find that Drowning a Mermaid Productions can benefit greatly from my ambition. I am currently an executive of the Game Dev Guild, the first ever video game development club at UofT. In this club, we hold weekly meetings to engage in discussion about design and implementation, creating a community of passionate game developers. I have also gained a greater insight on the overall game development process by working on an action platformer on my own, practicing good programming, design, and animation principles to cleverly improve the player experience. I am certain that I can use these experiences to be a reliable and hard-working team player at Drowning a Mermaid Productions.
+
+From my experience in programming to my strong initiative, I believe I am a strong contender for the Programmer position at Drowning a Mermaid Productions. I am excited to show why my passion and skills would be perfect for the studio and share why my previous employers hold my contributions in high regard.
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
